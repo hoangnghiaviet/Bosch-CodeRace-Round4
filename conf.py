@@ -67,6 +67,6 @@ needs_types = [
 
 needs_extra_options = ['url',  'date', 'time', 'test_level']
 for (key, value) in artifact_key_dict.items():
-    if (key == "Status" and value == "status") or (key == "Identifier" and value == "id"):
+    if (key == "Status" and value == "status") or (key == "Identifier" and value == "id") or (key == "Verification Criteria"):
         continue
     needs_extra_options.append(value)
