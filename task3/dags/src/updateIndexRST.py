@@ -167,12 +167,9 @@ Indices and tables
     # Create the updated index.rst file in the repository
     repository.create_file(index_file_path, 'File added', updated_content, branch=branch_name)
 
-Config()
-
 #Update config.xlsx and conf.py for building html
-
-
 def updateIndexRST():
+    Config()
     # Create conf.py in repo
     configSphinxLocalPath = '/opt/airflow/dags/src/conf.py'
     configSphinxPath = 'docs/conf.py'
